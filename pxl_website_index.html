@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>PXL-Digital-EA</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class = "header_margin">
+		<div class ="header">
+			<div>
+				<ul class = "navbar">
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Webserver</a></li>
+					<li><a href="#">Uurroosters</a></li>
+					<li><a href="#">Bachelorproef</a></li>
+					<li><a href="#">Locatie</a></li>
+					<li><a href="#">Opleiding</a></li>
+					<li><a href="pxl_website_index.html">Home</a></li>
+				</ul>
+			</div>
+				
+			<div class="logo_nav">
+				<img src="logo.png" >
+			</div>
+		</div>
+	</div>
+	
+	<div class="nocolomn">	
+		<h1> uitleg</h1>
+		<p> dit is een test <br> en nog een regel </p>
+	</div>
+	
+	<div class ="row">
+		<div class = "col-3">
+			<h1> Één vierde </h1>
+			<p> dit is 1/4 van het scherm </p>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nulla leo, pellentesque ac lacinia et, posuere a augue. Ut aliquam, ligula et aliquet vehicula, metus nisl hendrerit turpis, ut porttitor urna erat vel ex. Cras at metus dolor. Nam rhoncus nunc ultrices, convallis nisi blandit, egestas orci. Duis elementum enim viverra, sodales metus quis, posuere odio. Mauris enim metus, congue at luctus scelerisque, elementum quis leo. Vivamus metus lacus, dapibus porttitor auctor non, dapibus non augue. Phasellus fringilla mattis mi. Donec tristique dui eget leo egestas, a aliquam est fringilla. In dolor odio, molestie ut nisl ac, sollicitudin efficitur ex. Maecenas ac tempus leo, a pellentesque libero.</p>
+		</div>
+		<div class = "col-6">
+			<h1> De helft </h1>
+			<p>Dit is een half scherm met een tree dropdown</p>
+			<ul class="tree_start">
+				<li> <span class="tree"> Style </span>
+					<ul class="tree_nested">
+						<li> header </li>
+						<li> <span class="tree"> tree view </span>
+							<ul class="tree_nested">
+								<li> uitleg </li>
+								<li> voorbeeld </li>
+							</ul>
+						</li>
+						<li> <span class ="tree"> colommen </span>
+							<ul class="tree_nested">
+								<li> uitleg </li>
+								<li> voorbeeld </li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nulla leo, pellentesque ac lacinia et, posuere a augue. Ut aliquam, ligula et aliquet vehicula, metus nisl hendrerit turpis, ut porttitor urna erat vel ex. Cras at metus dolor. Nam rhoncus nunc ultrices, convallis nisi blandit, egestas orci. Duis elementum enim viverra, sodales metus quis, posuere odio. Mauris enim metus, congue at luctus scelerisque, elementum quis leo. Vivamus metus lacus, dapibus porttitor auctor non, dapibus non augue. Phasellus fringilla mattis mi. Donec tristique dui eget leo egestas, a aliquam est fringilla. In dolor odio, molestie ut nisl ac, sollicitudin efficitur ex. Maecenas ac tempus leo, a pellentesque libero.</p>
+		</div>
+		
+		<div class="col-3">
+			<h1> Dit is weer één vierde </h1>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nulla leo, pellentesque ac lacinia et, posuere a augue. Ut aliquam, ligula et aliquet vehicula, metus nisl hendrerit turpis, ut porttitor urna erat vel ex. Cras at metus dolor. Nam rhoncus nunc ultrices, convallis nisi blandit, egestas orci. Duis elementum enim viverra, sodales metus quis, posuere odio. Mauris enim metus, congue at luctus scelerisque, elementum quis leo. Vivamus metus lacus, dapibus porttitor auctor non, dapibus non augue. Phasellus fringilla mattis mi. Donec tristique dui eget leo egestas, a aliquam est fringilla. In dolor odio, molestie ut nisl ac, sollicitudin efficitur ex. Maecenas ac tempus leo, a pellentesque libero. </p>		
+		</div>
+	</div>
+	
+	<footer>
+		<h1> En nog een voetnoot </h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nulla leo, pellentesque ac lacinia et, posuere a augue. Ut aliquam, ligula et aliquet vehicula, metus nisl hendrerit turpis, ut porttitor urna erat vel ex. Cras at metus dolor. Nam rhoncus nunc ultrices, convallis nisi blandit, egestas orci. Duis elementum enim viverra, sodales metus quis, posuere odio. Mauris enim metus, congue at luctus scelerisque, elementum quis leo. Vivamus metus lacus, dapibus porttitor auctor non, dapibus non augue. Phasellus fringilla mattis mi. Donec tristique dui eget leo egestas, a aliquam est fringilla. In dolor odio, molestie ut nisl ac, sollicitudin efficitur ex. Maecenas ac tempus leo, a pellentesque libero.</p>
+	</footer>
+	
+	
+	
+	<script>
+		var toggler = document.getElementsByClassName("tree");
+		var i;
+
+		for (i = 0; i < toggler.length; i++) {
+			toggler[i].addEventListener("click", function() {
+				this.parentElement.querySelector(".tree_nested").classList.toggle("tree_active");
+				this.classList.toggle("tree-down");
+			});
+		}
+	</script>
+</body>
+</html>
+
